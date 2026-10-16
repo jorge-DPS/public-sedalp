@@ -1,0 +1,43 @@
+
+name: IA Local Desarrollo Web
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Qwen Coder 7B
+    provider: lmstudio
+    model: qwen2.5-coder-7b-instruct
+    apiBase: http://127.0.0.1:1234/v1
+    roles:
+      - chat
+      - edit
+      - apply
+    defaultCompletionOptions:
+      contextLength: 8192
+      maxTokens: 1024
+      temperature: 0.2
+
+  - name: Qwen Coder 7B Abliterated
+    provider: lmstudio
+    model: qwen2.5-coder-7b-instruct
+    apiBase: http://127.0.0.1:1234/v1
+    roles:
+      - chat
+      - edit
+      - apply
+    defaultCompletionOptions:
+      contextLength: 8192
+      maxTokens: 1024
+      temperature: 0.2
+
+  - name: Qwen 3.5 4B
+    provider: lmstudio
+    model: qwen3.5-4b
+    apiBase: http://127.0.0.1:1234/v1
+    roles:
+      - chat
+      - edit
+      - apply
+    defaultCompletionOptions:
+      contextLength: 8192
+      maxTokens: 1024
